@@ -106,9 +106,12 @@ if (!isTouchDevice && cursorDot) {
 
   // Mobile menu toggle: toggles `.mobile-open` on the nav-list
   (function() {
+    
     const menuToggle = document.querySelector('.menu-toggle');
     const navList = document.querySelector('.nav-list');
     if (!menuToggle || !navList) return;
+
+    
 
     menuToggle.addEventListener('click', () => {
       const isOpen = navList.classList.toggle('mobile-open');
@@ -132,4 +135,8 @@ if (!isTouchDevice && cursorDot) {
         navList.classList.remove('mobile-open');
       }
     });
+
+
+
+
   })();
